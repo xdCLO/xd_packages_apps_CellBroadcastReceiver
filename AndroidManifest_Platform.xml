@@ -33,6 +33,7 @@
   <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
   <uses-permission android:name="android.permission.READ_CELL_BROADCASTS" />
   <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
   <uses-permission android:name="com.android.cellbroadcastservice.FULL_ACCESS_CELL_BROADCAST_HISTORY" />
 
   <uses-sdk android:minSdkVersion="21"/>
@@ -125,6 +126,7 @@
         <action android:name="android.intent.action.LOCALE_CHANGED" />
         <action android:name="android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED" />
         <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED" />
+        <action android:name="android.intent.action.SERVICE_STATE" />
       </intent-filter>
       <intent-filter>
         <action android:name="android.telephony.action.SECRET_CODE" />
